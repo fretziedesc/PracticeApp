@@ -1,5 +1,5 @@
 <resources>
-  <string name="app_name">MyPractiveApp</string>
+  <string name="app_name">MyPracticeApp</string>
   <!-- TODO: Remove or change this placeholder text -->
   <string name="hello_blank_fragment">Hello FRAGMENT 1</string>
   <!-- Preference Titles -->

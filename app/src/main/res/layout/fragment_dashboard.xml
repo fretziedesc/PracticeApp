@@ -3,11 +3,26 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".fragments.DashboardFragment">
+  tools:context=".fragments.DashboardFragment"
+  android:id="@+id/drawerDashboard">
 
-  <TextView
+  <include
+    android:id="@+id/includeContentDashboard"
+    layout="@layout/content_dashboard"
     android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+  <com.google.android.material.navigation.NavigationView
+    android:id="@+id/nav_view"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:text="@string/hello_blank_fragment" />
+    android:layout_gravity="start"
+    android:fitsSystemWindows="true">
+
+    <include
+      android:id="@+id/includeNavDashBoard"
+      layout="@layout/nav_dashboard" />
+
+  </com.google.android.material.navigation.NavigationView>
+
 
 </androidx.drawerlayout.widget.DrawerLayout>

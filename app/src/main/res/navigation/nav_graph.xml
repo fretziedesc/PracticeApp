@@ -2,35 +2,4 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
-  android:id="@+id/nav_graph"
-  app:startDestination="@id/blankFragment1">
-
-  <fragment
-    android:id="@+id/blankFragment1"
-    android:name="com.fretziedesc.mypractiveapp.fragments.BlankFragment1"
-    android:label="fragment_blank1"
-    tools:layout="@layout/fragment_blank1" >
-    <action
-      android:id="@+id/action_blankFragment1_to_blankFragment2"
-      app:destination="@id/blankFragment2" />
-  </fragment>
-  <fragment
-    android:id="@+id/blankFragment2"
-    android:name="com.fretziedesc.mypractiveapp.fragments.BlankFragment2"
-    android:label="blank_fragment2_fragment"
-    tools:layout="@layout/blank_fragment2_fragment" >
-    <action
-      android:id="@+id/action_blankFragment2_to_blankFragment1"
-      app:destination="@id/blankFragment1" />
-    <action
-      android:id="@+id/action_blankFragment2_to_itemFragment"
-      app:destination="@id/itemFragment" />
-  </fragment>
-  <fragment
-    android:id="@+id/itemFragment"
-    android:name="com.fretziedesc.mypractiveapp.fragments.ItemFragment"
-    android:label="fragment_item_list"
-    tools:layout="@layout/fragment_item_list" >
-
-  </fragment>
-</navigation>
+  android:id="@+id/nav_graph"/>

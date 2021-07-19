@@ -15,4 +15,70 @@
     app:layout_constraintTop_toTopOf="parent"
     app:srcCompat="@mipmap/ic_launcher_round" />
 
+
+  <TextView
+    android:id="@+id/navLogoLabelTextView"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:fontFamily="@font/roboto_medium"
+    android:text="@string/app_name"
+    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/navLogoImageView"
+    app:layout_constraintTop_toBottomOf="@+id/navLogoImageView" />
+
+  <View
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="16dp"
+    android:background="@color/black_12A"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/navLogoLabelTextView" />
+
+  <TextView
+    android:id="@+id/navAboutAppTextView"
+    style="@style/navMenuItem"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="52dp"
+    android:text="@string/menu_about_app"
+    android:gravity="center_vertical"
+    app:drawableStartCompat="@android:drawable/ic_dialog_info"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/navLogoLabelTextView"
+    app:layout_constraintTop_toBottomOf="@+id/view" />
+
+  <TextView
+    android:id="@+id/navAboutPracticeTextView"
+    style="@style/navMenuItem"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="@string/menu_about_this"
+    app:drawableStartCompat="@android:drawable/sym_contact_card"
+    app:layout_constraintEnd_toEndOf="@+id/navAboutAppTextView"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/navLogoLabelTextView"
+    app:layout_constraintTop_toBottomOf="@+id/navAboutAppTextView" />
+
+  <TextView
+    android:id="@+id/navContactBdaTextView"
+    style="@style/navMenuItem"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="@string/menu_contact_this"
+    android:gravity="center_vertical"
+    app:drawableStartCompat="@android:drawable/sym_call_incoming"
+    app:layout_constraintEnd_toEndOf="@+id/navAboutAppTextView"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/navLogoLabelTextView"
+    app:layout_constraintTop_toBottomOf="@+id/navAboutPracticeTextView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

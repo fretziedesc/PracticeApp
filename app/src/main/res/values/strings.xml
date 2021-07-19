@@ -4,4 +4,7 @@
   <string name="navigation_drawer_open">Open navigation drawer</string>
   <string name="navigation_drawer_close">Close navigation drawer</string>
   <string name="action_search">Search</string>
+  <string name="menu_about_app">About APP</string>
+  <string name="menu_about_this">About the MyPracticeApp</string>
+  <string name="menu_contact_this">Contact MyPracticeApp</string>
 </resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="?android:attr/selectableItemBackground"
+  android:clickable="true"
+  android:focusable="true"
+  android:paddingTop="16dp">
+
+
+  <ImageView
+    android:id="@+id/messageImageView"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginBottom="15dp"
+    app:layout_constraintBottom_toTopOf="@id/horizontalRulerView"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/ic_category_a" />
+
+  <TextView
+    android:id="@+id/messageTitleTextView"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:fontFamily="@font/roboto"
+    android:textColor="@color/black"
+    app:layout_constraintEnd_toStartOf="@+id/messageDateTextView"
+    app:layout_constraintStart_toEndOf="@+id/messageImageView"
+    app:layout_constraintTop_toTopOf="@+id/messageImageView"
+    tools:text="Feedback #CA000001" />
+
+  <TextView
+    android:id="@+id/messageDateTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:fontFamily="@font/roboto"
+    android:textColor="@color/gray_46"
+    android:textSize="12sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/messageTitleTextView"
+    tools:text="Dec 03, 2020" />
+
+  <TextView
+    android:id="@+id/messagePreviewTextView"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:ellipsize="end"
+    android:fontFamily="@font/roboto"
+    android:maxLines="1"
+    android:textSize="12sp"
+    app:layout_constraintBottom_toBottomOf="@+id/messageImageView"
+    app:layout_constraintEnd_toEndOf="@+id/messageTitleTextView"
+    app:layout_constraintStart_toStartOf="@+id/messageTitleTextView"
+    app:layout_constraintTop_toBottomOf="@+id/messageTitleTextView"
+    app:layout_constraintVertical_bias="0.83"
+    tools:text="This is dummy copy. It is not mea..." />
+
+  <View
+    android:id="@+id/horizontalRulerView"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/iron"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

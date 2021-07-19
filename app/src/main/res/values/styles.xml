@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="navMenuItem" parent="TextAppearance.AppCompat">
+      <item name="android:padding">8dp</item>
+      <item name="android:textColor">@color/gray_46</item>
+      <item name="fontFamily">@font/roboto</item>
+      <item name="android:drawablePadding">20dp</item>
+    </style>
+</resources>
